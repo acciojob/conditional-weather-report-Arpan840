@@ -15,7 +15,7 @@ const App = () => {
     >
       {/* Do not remove the main div */}
       <p>
-        Temperature:<span style={{ color: data.temperature > Threshold ? "red" : "blue" }}>
+        Temperature:<span style={{ color: data.temperature >= Threshold ? "red" : "blue" }}>
           {data.temperature}
         </span>
       </p>
