@@ -14,13 +14,12 @@ const App = () => {
       }}
     >
       {/* Do not remove the main div */}
-      <h1>
-        Temperature:
-        <b style={{ color: data.temperature > Threshold ? "red" : "blue" }}>
+      <p>
+        Temperature:<span style={{ color: data.temperature > Threshold ? "red" : "blue" }}>
           {data.temperature}
-        </b>
-      </h1>
-      <h1>conditions:{data.conditions}</h1>
+        </span>
+      </p>
+      <p>conditions:{data.conditions}</p>
     </div>
   );
 };
